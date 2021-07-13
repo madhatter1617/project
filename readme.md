@@ -1,11 +1,6 @@
-Users will be able to mouseOver the images provided and will see 1 random recipe relating to the image or title of the image.
-I would like to have 6 to 9 images. 
-I would like a few to be more as an ingredient to a drink and 3 recipes will pop up relating to it. 
+Users will be able to click on the 6 images provided, once clicked they’ll be able to see a small description. 
 
-The user will be able to click on a "random" button and a random drink will appear with the title, image, and small description.
+The users will be able to like the image as well, but it won’t save after the page refreshes. (I don’t want to mess the dbjson right now)
 
 I’ll be using the website and the API that is provided to get my information: https://www.thecocktaildb.com/api.php
 
-EventListeners: 
-Random button click 
-MouseOver on the images
