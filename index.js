@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("test biss");
+    // console.log("test biss");
     margarita()     
   });
 
@@ -22,7 +22,7 @@ function card(info){
   let title = document.createElement('h2')
   let image = document.createElement('img')
   //let likeBtn = document.createElement('button')
-  let inst = document.createElement('h4')
+  let inst = document.createElement('ul')
  
 
   
@@ -43,28 +43,57 @@ function card(info){
   // })
   
   title.addEventListener('click', () => { 
-    console.log(info.strInstructions)
+    console.log(info)
+    // for (noot in info) {
+    //   console.log(`${noot} is pointing at ${info[noot]}`)
+    // }
+    // Object.keys(info).forEach(noot => {
+    //   console.log(`${noot} is pointing at ${info[noot]}`)
+    // })
+
     let newLi = document.createElement('li')
       
-    let mass1 = document.createElement('h6')
-    let mass2 = document.createElement('h6')
-    let mass3 = document.createElement('h6')
-    let mass4 = document.createElement('h6')
-    let mass5 = document.createElement('h6')
-    let mass6 = document.createElement('h6')
-    let mass7 = document.createElement('h6')
-    
+    let mass1 = document.createElement('h5')
+    let mass2 = document.createElement('h5')
+    let mass3 = document.createElement('h5')
+    let mass4 = document.createElement('h5')
+    let mass5 = document.createElement('h5')
+    let mass6 = document.createElement('h5')
+    let mass7 = document.createElement('h5')
     let newInst = document.createElement('h4')
+    
+    let measure1 = info.strMeasure1
+    let measure2 = info.strMeasure2
+    let measure3 = info.strMeasure3
+    let measure4 = info.strMeasure4
+    let measure5 = info.strMeasure5
+    let measure6 = info.strMeasure6
+    let measure7 = info.strMeasure7
 
-    mass1.textContent = `${info.strMeasure1} ${info.strIngredient1}`
-    mass2.textContent = `${info.strMeasure2} ${info.strIngredient2}`
-    mass3.textContent = `${info.strMeasure3} ${info.strIngredient3}`
-    mass4.textContent = `${info.strMeasure4} ${info.strIngredient4}`
-    mass5.textContent = `${info.strMeasure5} ${info.strIngredient5}`
-    mass6.textContent = `${info.strMeasure6} ${info.strIngredient6}`
-    mass7.textContent = `${info.strMeasure7} ${info.strIngredient7}`
+    let ingreed1 = info.strIngredient1
+    let ingreed2 = info.strIngredient2
+    let ingreed3 = info.strIngredient3
+    let ingreed4 = info.strIngredient4
+    let ingreed5 = info.strIngredient5
+    let ingreed6 = info.strIngredient6
+    let ingreed7 = info.strIngredient7
+    
+    mass1=" * " +measure1 +" of " + ingreed1 
+    mass2="  * " +measure2 +" of " + ingreed2
+    mass3="  * " +measure3 +" of " + ingreed3 
+    mass4="  * " +measure4 +" of " + ingreed4
+    mass5="  * " +measure5 +" of " + ingreed5 
+    mass6="  * " +measure6 +" of " + ingreed6
+    mass7="  * " +measure7 +" of " + ingreed7 
+
     newInst.textContent = info.strInstructions
   
+    // if(info.strMeasure4 === null){
+    //   console.log('done')
+    //   let four = info.strMeasure4 
+    //   four.remove()
+    // }
+    
     newLi.append(mass1,mass2,mass3,mass4,mass5,mass6,mass7,newInst)
     inst.append(newLi)
   })
