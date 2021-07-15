@@ -3,7 +3,8 @@
   }
   
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Garamond , Helvetica, sans-serif;
+    background-color: rgb(248, 236, 226)
   }
   
   /* Float four columns side by side */
@@ -24,7 +25,7 @@
   }
   
   /* Responsive columns */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 300px) {
     .column {
       width: 100%;
       display: block;
@@ -37,6 +38,40 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #fcfded;
     margin-top: 16px;
+  }
+
+  #spit{
+    font-family: Garamond , Helvetica, sans-serif;
+    text-align: center;
+  }
+  h3{
+    font-family: Garamond , Helvetica, sans-serif;
+    text-align: center;
+  }
+  h2:hover{
+    font-family: Garamond , Helvetica, sans-serif;
+    text-align: center;
+    color: purple;
+    font-size: 40px;
+  }
+  h2{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  h4{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-family: Garamond , Helvetica, sans-serif;
+    
+  }
+  h6{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Garamond , Helvetica, sans-serif;
   }

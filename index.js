@@ -11,7 +11,7 @@ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
 
 function renderCard(marg){
   //console.log(marg)   
-  document.querySelector('#drink-list li').remove()
+  
 Object.values(marg.drinks).forEach(card)
     carry ()
 }
@@ -31,6 +31,7 @@ function card(info){
   title.textContent = info.strDrink
   image.src = info.strDrinkThumb
   image.style.width ="420px"
+  image.style.height = "350px"
   inst.textContent =" "
   
 
@@ -75,7 +76,7 @@ function card(info){
 function carry (){
 let gits = document.querySelector('#spit')
   gits.textContent = "Get into the Spirit"
-  gits.style.color = "gray"
+  gits.style.color = "black"
   
   gits.addEventListener('mouseenter', (e) => {
 //console.log('test shit')
@@ -83,8 +84,8 @@ gits.style.color = "purple";
 gits.textContent="Its Five O'clock Somewhere!"
   })
   gits.addEventListener('mouseleave', (e) => {
-    console.log('test shti')
-    gits.style.color = "gray"
+    
+    gits.style.color = "black"
     gits.textContent="Get into the Spirit"
       })
 }
